@@ -25,7 +25,6 @@ public class AndroidNotificationService {
         Map<String, String> payload = new HashMap<>();
         payload.put("message", pushyPushRequest.getData());
         PushyPush pushyPush = new PushyPush(deviceToken, payload);
-        System.out.println("");
         try {
             PushyAPI.sendPush(pushyPush);
         }
